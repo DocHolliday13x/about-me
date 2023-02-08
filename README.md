@@ -6,7 +6,7 @@
 
 ### Lighthouse Accessibilty Report Score
 
-!img[](lightHouseScreenshot.png)
+![Accessibility Score](img/lightHouseScreenshotAboutMe.png)
 
 
 ### Links and Resources
