@@ -49,13 +49,13 @@ if (questionOneGuess === 'yes' || questionOneGuess === 'y') {
 }
 
 
-let bonusQuestionGuess = prompt("Is Joe Davitt my sage and spirit guide?").toLowerCase();
+// let bonusQuestionGuess = prompt("Is Joe Davitt my sage and spirit guide?").toLowerCase();
 
-if (bonusQuestionGuess === 'yes' || bonusQuestionGuess === 'y') {
-    alert("That is correct!");
-} else if (bonusQuestionGuess === 'no' || 'n'){
-    alert("Ohhhh, that is incorrect. Joe Davitt is a saint and I am lucky to know him.");
-}
+// if (bonusQuestionGuess === 'yes' || bonusQuestionGuess === 'y') {
+//     alert("That is correct!");
+// } else if (bonusQuestionGuess === 'no' || 'n'){
+//     alert("Ohhhh, that is incorrect. Joe Davitt is a saint and I am lucky to know him.");
+// }
 
 // To Do: Give them a final message with their name in the alert
 alert(`Thanks for playing, ${userName}!`);
