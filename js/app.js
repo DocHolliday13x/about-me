@@ -80,7 +80,7 @@ questionFive();
 // }
 // TODO: Give the user exactly four opportunities to get the correct answer
 // for (let i = 0; i < 4; i++)
-// TODO: After all attempts have been exhuausted, tell user correct answer
+// TODO: After all attempts have been exhausted, tell user correct answer
 //if (i === 3) {
 //     alert(`Sorry, you are out of attempts.`)
 // }
@@ -116,13 +116,13 @@ questionFive();
 
 function questionSix(){
   // let luckyNumber = 13;
-  let userGuess = prompt('My lucky number is between 10 and 20. What is it?')
+  let userGuess = +prompt('My lucky number is between 10 and 20. What is it?');
   for (let i = 0; i < 4; i++) {
     if (userGuess < 10 || userGuess > 20) {
-      userGuess = prompt('You must enter a two digit number between 10 and 20.')
+      userGuess = prompt('You must enter a two digit number between 10 and 20.');
     }
     else if (i === 3) {
-      alert(`Game Over, ${userName}! You have run out of guesses. The correct answer is 13.`)
+      alert(`Game Over, ${userName}! You have run out of guesses. The correct answer is 13.`);
     }
     else if (userGuess <= 12) {
       userGuess = prompt('That guess is too low. Try again!');
@@ -138,12 +138,12 @@ function questionSix(){
 questionSix();
 
 //TODO: Add a 7th question that has 
-// let questionSeven = prompt(`Guess one of my fav boybands`).toLowerCase();
+// let questionSeven = prompt(`Guess one of my fav boy bands`).toLowerCase();
 //TODO: multiple possible answers stored within an array (loop)
 // let boyBands = [`backstreet boys`, `take that`, `one direction`, `bts`]
 // //TODO: Give the user 6 attempts to guess correct answer
 // for (let i = 0; i < 6; i++){
-//     let questionSeven = prompt(`Guess one of my fav boybands`).toLowerCase();
+//     let questionSeven = prompt(`Guess one of my fav boy bands`).toLowerCase();
 
 //     for (let j = 0; j < boyBands.length; j++) {
 //         if (questionSeven === boyBands[j]) {
@@ -154,7 +154,7 @@ questionSix();
 //     }
 // }
 
-// alert(`Here are all of my fav boybands: ${boyBands}`);
+// alert(`Here are all of my fav boy bands: ${boyBands}`);
 
 //TODO: The guesses will end once the user guesses a correct answer or
 //TODO: end loop when they run out of attempts
@@ -164,7 +164,7 @@ questionSix();
 //     break;
 // }
 //TODO: Display all possible correct answers to the user
-// alert(`Here are all of my fav boybands: ${boyBands}`);
+// alert(`Here are all of my fav boy bands: ${boyBands}`);
 
 
 // My Code For Question 7 //
@@ -172,25 +172,28 @@ questionSix();
 // let myLife === completelyFucked
 // Attempt #4,071 - This is gonna be it, I can feel it in my bones!
 
-const topTenDest = ['australia', 'malta', 'bahamas', 'hawaii', 'paris', 'glacier national park', 'crater lake national park', 'mount rainier', 'the moon', 'antarctica'];
-let numOfGuess = 0;
-let correctAns = false;
+function questionSeven(){
+  const topTenDest = ['australia', 'malta', 'bahamas', 'hawaii', 'paris', 'glacier national park', 'crater lake national park', 'mount rainier', 'the moon', 'antarctica'];
+  let numOfGuess = 0;
+  let correctAns = false;
 
-while (numOfGuess < 6 && correctAns === false) {
-   let destGuess = prompt(`One more game for you, ${userName}. You have 6 attempts to guess as many of my Top 10 Adventure Destinations as you can.`).toLowerCase();
-   for (let i = 0; i < topTenDest.length; i++) {
-       if (destGuess === topTenDest[i]) {
-           alert(`Nice Work, ${userName}! You got one! My top 10 destinations are ` + topTenDest);
-           userScore += 1;
-           correctAns = true;
-           break;
-       } 
-       if (i === topTenDest.length - 1) {
-           numOfGuess++;
-           alert(`Nice guess ${userName}, but that is not on my list.`);
-       }
-   }
+  while (numOfGuess < 6 && correctAns === false) {
+    let destGuess = prompt(`One more game for you, ${userName}. You have 6 attempts to guess as many of my Top 10 Adventure Destinations as you can.`).toLowerCase();
+    for (let i = 0; i < topTenDest.length; i++) {
+      if (destGuess === topTenDest[i]) {
+        alert(`Nice Work, ${userName}! You got one! My top 10 destinations are ` + topTenDest);
+        userScore += 1;
+        correctAns = true;
+        break;
+      } 
+      if (i === topTenDest.length - 1) {
+        numOfGuess++;
+        alert(`Nice guess ${userName}, but that is not on my list.`);
+      }
+    }
+  }
 }
+questionSeven();
 
 // TODO: Give them a final message with their name in the alert
 alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
@@ -199,17 +202,15 @@ alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
 //If we could use .includes we could do something like this
 // for (let i = 0; i < 6; i++) {
 //     if (topTenDest.includes(destGuess.toLowerCase)) {
-    //         prompt(`Congrats ${userName}! You have guessed correctly!`)
-    //         userScore +=1;
-    //         break;
-    //     } else if (i === 5){
-        //         alert(`Game Over, ${userName}! You have run out of attempts.`)
-        //     } else {
-            //         prompt(`Good guess, ${userName}. But that is not one of my top ten adventure destinations. Try again!`)
-            //     }
-            // }
-            
-           
+//         prompt(`Congrats ${userName}! You have guessed correctly!`)
+//         userScore +=1;
+//         break;
+//     } else if (i === 5){
+//         alert(`Game Over, ${userName}! You have run out of attempts.`)
+//     } else {
+//         prompt(`Good guess, ${userName}. But that is not one of my top ten adventure destinations. Try again!`)
+//     }
+// }
 
 
 // This doesn't work either. I'm such a piece of fucking garbage.
@@ -286,7 +287,7 @@ alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
 // }
 // Now we have to INVOKE the function
 // newGreeting();
-// on a function return: declare a varialbe, and assign it the return of your function
+// on a function return: declare a variable, and assign it the return of your function
 // function square(num) {
 //     return num * num;
 // }
