@@ -8,6 +8,10 @@
 
 ![Accessibility Score](img/lightHouseScreenshotAboutMe.png)
 
+## Lab 03
+
+![Accessibility Score](img/lighthouseScreenshotLab03.png)
+
 
 ### Links and Resources
 
