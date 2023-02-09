@@ -107,8 +107,6 @@ questionFive();
 
 
 // My Code For Lab 03 //
-let luckyNumber = 13;
-let userGuess = prompt('My lucky number is between 10 and 20. What is it?')
 
 // Always check user input first!
 // Why the fuck is this not working?! 
@@ -116,23 +114,28 @@ let userGuess = prompt('My lucky number is between 10 and 20. What is it?')
 // Still accepts letters as a correct answer. That is NOT ok. *Bangs my head on wall repeatedly.
 // Fuck it, good enough for government work.
 
-for (let i = 0; i < 4; i++) {
+function questionSix(){
+  // let luckyNumber = 13;
+  let userGuess = prompt('My lucky number is between 10 and 20. What is it?')
+  for (let i = 0; i < 4; i++) {
     if (userGuess < 10 || userGuess > 20) {
-        userGuess = prompt('You must enter a two digit number between 10 and 20.')
+      userGuess = prompt('You must enter a two digit number between 10 and 20.')
     }
     else if (i === 3) {
-        alert(`Game Over, ${userName}! You have run out of guesses. The correct answer is 13.`)
+      alert(`Game Over, ${userName}! You have run out of guesses. The correct answer is 13.`)
     }
     else if (userGuess <= 12) {
-        userGuess = prompt('That guess is too low. Try again!');
+      userGuess = prompt('That guess is too low. Try again!');
     } else if (userGuess >= 14) {
-        userGuess = prompt('That guess is too high. Try again!');
+      userGuess = prompt('That guess is too high. Try again!');
     } else {
-        alert(`Congrats ${userName}, you have guessed correctly!`);
-        userScore += 1;
-        break;
+      alert(`Congrats ${userName}, you have guessed correctly!`);
+      userScore += 1;
+      break;
     }
+  }
 }
+questionSix();
 
 //TODO: Add a 7th question that has 
 // let questionSeven = prompt(`Guess one of my fav boybands`).toLowerCase();
