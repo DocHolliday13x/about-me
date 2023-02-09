@@ -43,14 +43,16 @@ function questionThree(){
 }
 questionThree();
 
-
-let questionFourGuess = prompt('Do I live in Oregon?').toLowerCase();
-if (questionFourGuess === 'no' || questionTwoGuess === 'n') {
+function questionFour(){
+  let questionFourGuess = prompt('Do I live in Oregon?').toLowerCase();
+  if (questionFourGuess === 'no' || questionFourGuess === 'n') {
     alert('You Are Correct!');
     userScore += 1;
-} else if (questionTwoGuess === 'yes' || questionFourGuess === 'y') {
+  } else if (questionFourGuess === 'yes' || questionFourGuess === 'y') {
     alert('You Are Incorrect');
+  }
 }
+questionFour();
 
 let questionFiveGuess = prompt('Am I married?').toLowerCase();
 
