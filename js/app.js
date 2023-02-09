@@ -9,15 +9,17 @@ let userScore = 0;
 
 alert(`Welcome to my site, ${userName}! Let's play a guessing game. Please answer "yes" or "no", or answer "y" or "n"`);
 
+function questionOne (){
 // To Do: Prompt 5 yes/no questions for the user to guess and alert when they are correct/incorrect
-let questionOneGuess = prompt("Do I have a daughter?").toLowerCase();
-
-if (questionOneGuess === 'yes' || questionOneGuess === 'y') {
+  let questionOneGuess = prompt("Do I have a daughter?").toLowerCase();
+  if (questionOneGuess === 'yes' || questionOneGuess === 'y') {
     alert("You Are Correct!");
     userScore += 1;
-} else if (questionOneGuess === 'no' || questionOneGuess === 'n') {
+  } else if (questionOneGuess === 'no' || questionOneGuess === 'n') {
     alert("You Are Incorrect");
+  }
 }
+questionOne();
 
 let questionTwoGuess = prompt("Was I in the Army?").toLowerCase();
 
