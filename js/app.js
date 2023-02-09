@@ -260,3 +260,33 @@ alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
 //     alert("Ohhhh, that is incorrect. Joe Davitt is a saint and I am lucky to know him.");
 // }
 
+
+// Lab 04 //
+// FUNCTIONS
+// Function declaration below
+// function greeting() {
+//     console.log(`Hey Class!`);
+// }
+// function expression below
+// let newGreeting = function () {
+//     console.log(`This is a new greeting.`);
+// }
+// Now we have to INVOKE the function
+// newGreeting();
+// on a function return: declare a varialbe, and assign it the return of your function
+// function square(num) {
+//     return num * num;
+// }
+// let mySquare = square();
+// console.log(mySquare);
+// you can store all returns as one value within an array
+// function equations(a, b) {
+//     let product = a*b;
+//     let sum = a+b;
+//     let difference = a=b;
+
+//     return [product, sum, difference];
+// }
+// now to invoke it!
+// let myProduct = equations(2, 10)[0];
+
