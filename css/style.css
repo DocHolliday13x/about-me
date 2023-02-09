@@ -11,6 +11,8 @@ body {
     background-color: rgb(182, 182, 182);
     padding: 10px;
     font-family: 'Shadows Into Light', cursive;
+    margin: auto;
+    width: 95%;
 }
 
 h1 {
@@ -59,6 +61,16 @@ a:hover {
 a:visited {
     font-family: 'Shadows Into Light', cursive;
     color: rgb(248, 2, 125);
+}
+
+ul  {
+    list-style-type: disc;
+
+}
+
+ol {
+    list-style-type: numbers;
+
 }
 
 #title1 {
