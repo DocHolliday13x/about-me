@@ -32,16 +32,19 @@ function questionTwo(){
 }
 questionTwo();
 
-let questionThreeGuess = prompt('Am I a student at CodeFellows?').toLowerCase();
-if (questionThreeGuess === 'yes' || questionThreeGuess === 'y') {
+function questionThree(){
+  let questionThreeGuess = prompt('Am I a student at CodeFellows?').toLowerCase();
+  if (questionThreeGuess === 'yes' || questionThreeGuess === 'y') {
     alert('You Are Correct!');
     userScore += 1;
-} else if (questionThreeGuess === 'no' || questionThreeGuess === 'n') {
+  } else if (questionThreeGuess === 'no' || questionThreeGuess === 'n') {
     alert('You Are Incorrect');
+  }
 }
+questionThree();
+
 
 let questionFourGuess = prompt('Do I live in Oregon?').toLowerCase();
-
 if (questionFourGuess === 'no' || questionTwoGuess === 'n') {
     alert('You Are Correct!');
     userScore += 1;
