@@ -54,14 +54,16 @@ function questionFour(){
 }
 questionFour();
 
-let questionFiveGuess = prompt('Am I married?').toLowerCase();
-
-if (questionFiveGuess === 'yes' || questionFiveGuess === 'y') {
+function questionFive(){
+  let questionFiveGuess = prompt('Am I married?').toLowerCase();
+  if (questionFiveGuess === 'yes' || questionFiveGuess === 'y') {
     alert('You Are Correct!');
     userScore += 1;
-} else if (questionFiveGuess === 'no' || questionFiveGuess === 'n') {
+  } else if (questionFiveGuess === 'no' || questionFiveGuess === 'n') {
     alert('You Are Incorrect');
+  }
 }
+questionFive();
 
 // Lab03 Objectives
 // TODO: Create a number for user to guess
