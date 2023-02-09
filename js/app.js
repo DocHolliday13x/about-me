@@ -56,7 +56,47 @@ if (questionFiveGuess === 'yes' || questionFiveGuess === 'y') {
 }
 
 // Lab03 Objectives
+// TODO: Create a number for user to guess
+//let questionSix = prompt('Guess what number I am thinking of?');
+//let myNum = 25;
+// TODO: Indicate via alert if guess is "too high" or "too low"
+// TODO: Create alert to notify user when they are correct
+// if (questionSix > myNum){
+//     alert(`Sorry, too high!`)
+// } else if (questionSix < myNum) {
+//     alert(`Sorry, too low!`)
+// } else if (questionSix === myNum) {
+//     alert(`You are correct!`)
+// }
+// TODO: Give the user exactly four opportunities to get the correct answer
+// for (let i = 0; i < 4; i++)
+// TODO: After all attempts have been exhuausted, tell user correct answer
+//if (i === 3) {
+//     alert(`Sorry, you are out of attempts.`)
+// }
 
+// Audrey's Example for question 6//
+//'use strict'
+// let myNum = 25;
+
+// for (let i = 0; i < 4; i++) {
+//     let questionSix = prompt('Guess what number I am thinking of?');
+
+//     if (questionSix > myNum){
+//         alert(`Sorry, too high!`)
+//     } else if (questionSix < myNum) {
+//         alert(`Sorry, too low!`)
+//     } else if (parseInt(questionSix) === myNum) {
+//         alert(`You are correct!`)
+//         break;
+//     }
+//     if (i === 3) {
+//         alert(`Sorry, you are out of attempts.`)
+//     }
+// }
+
+
+// My Code For Lab 03 //
 let luckyNumber = 13;
 let userGuess = prompt('My lucky number is between 10 and 20. What is it?')
 
@@ -84,7 +124,64 @@ for (let i = 0; i < 4; i++) {
     }
 }
 
-// ToDo: This question will have multiple correct answers stored within an array, and the user has 6 opportunities to guess. Run until out of attempts, or until a correct answer is given.
+//TODO: Add a 7th question that has 
+// let questionSeven = prompt(`Guess one of my fav boybands`).toLowerCase();
+//TODO: multiple possible answers stored within an array (loop)
+// let boyBands = [`backstreet boys`, `take that`, `one direction`, `bts`]
+// //TODO: Give the user 6 attempts to guess correct answer
+// for (let i = 0; i < 6; i++){
+//     let questionSeven = prompt(`Guess one of my fav boybands`).toLowerCase();
+
+//     for (let j = 0; j < boyBands.length; j++) {
+//         if (questionSeven === boyBands[j]) {
+//             alert(`OMG I LOVE THEM!`);
+//             i = 5;
+//             break;
+//         }
+//     }
+// }
+
+// alert(`Here are all of my fav boybands: ${boyBands}`);
+
+//TODO: The guesses will end once the user guesses a correct answer or
+//TODO: end loop when they run out of attempts
+// if (questionSeven === boyBands[j]) {
+//     alert(`OMG I LOVE THEM!`);
+//     i = 5;
+//     break;
+// }
+//TODO: Display all possible correct answers to the user
+// alert(`Here are all of my fav boybands: ${boyBands}`);
+
+
+// My Code For Question 7 //
+// I used my top 10 from my HTML document because I misread the instructions.          
+// let myLife === completelyFucked
+// Attempt #4,071 - This is gonna be it, I can feel it in my bones!
+
+const topTenDest = ['australia', 'malta', 'bahamas', 'hawaii', 'paris', 'glacier national park', 'crater lake national park', 'mount rainier', 'the moon', 'antarctica'];
+let numOfGuess = 0;
+let correctAns = false;
+
+while (numOfGuess < 6 && correctAns === false) {
+   let destGuess = prompt(`One more game for you, ${userName}. You have 6 attempts to guess as many of my Top 10 Adventure Destinations as you can.`).toLowerCase();
+   for (let i = 0; i < topTenDest.length; i++) {
+       if (destGuess === topTenDest[i]) {
+           alert(`Nice Work, ${userName}! You got one! My top 10 destinations are ` + topTenDest);
+           userScore += 1;
+           correctAns = true;
+           break;
+       } 
+       if (i === topTenDest.length - 1) {
+           numOfGuess++;
+           alert(`Nice guess ${userName}, but that is not on my list.`);
+       }
+   }
+}
+
+// TODO: Give them a final message with their name in the alert
+alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
+
 
 //If we could use .includes we could do something like this
 // for (let i = 0; i < 6; i++) {
@@ -100,30 +197,6 @@ for (let i = 0; i < 4; i++) {
             // }
             
            
-           
- // let myLife === completelyFucked
- // Attempt #4,071 - This is gonna be it, I can feel it in my bones!
-
-const topTenDest = ['australia', 'malta', 'bahamas', 'hawaii', 'paris', 'glacier national park', 'crater lake national park', 'mount rainier', 'the moon', 'antarctica'];
-let numOfGuess = 0;
-let correctAns = false;
-
-while (numOfGuess < 6 && correctAns === false) {
-    let destGuess = prompt(`One more game for you, ${userName}. You have 6 attempts to guess as many of my Top 10 Adventure Destinations as you can.`).toLowerCase();
-    for (let i = 0; i < topTenDest.length; i++) {
-        if (destGuess === topTenDest[i]) {
-            alert(`Nice Work, ${userName}! You got one! My top 10 destinations are ` + topTenDest);
-            userScore += 1;
-            correctAns = true;
-            break;
-        } 
-        if (i === topTenDest.length - 1) {
-            numOfGuess++;
-            alert(`Nice guess ${userName}, but that is not on my list.`);
-        }
-    }
-}
-
 
 
 // This doesn't work either. I'm such a piece of fucking garbage.
@@ -178,8 +251,6 @@ while (numOfGuess < 6 && correctAns === false) {
 
 
 
-// To Do: Give them a final message with their name in the alert
-alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
 
 // let bonusQuestionGuess = prompt("Is Joe Davitt my sage and spirit guide?").toLowerCase();
 
@@ -188,3 +259,4 @@ alert(`Thanks for playing, ${userName}! Your score is ${userScore}!`);
 // } else if (bonusQuestionGuess === 'no' || 'n'){
 //     alert("Ohhhh, that is incorrect. Joe Davitt is a saint and I am lucky to know him.");
 // }
+
