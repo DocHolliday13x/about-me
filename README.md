@@ -12,6 +12,10 @@
 
 ![Accessibility Score](img/lighthouseScreenshotLab03.png)
 
+## Lab 05b
+
+![Accessibility Score](img/lighthouseScreenshotLab05b.png)
+
 ### Links and Resources
 
 * [WS3 CSS](https://www.w3schools.com/css/default.asp)
