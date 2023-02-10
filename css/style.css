@@ -17,34 +17,31 @@ body {
 
 h1 {
     font-size: 100px;
-    /* font-family: 'Shadows Into Light', cursive; */
     color: black;
     margin: auto;
     text-align: center;
 }
 
 h2 {
-    font-size:40px;
-    /* font-family: 'Shadows Into Light', cursive; */
+    font-size: 40px;
     color: black;
 }
 
 h3 {
     font-size: 30px;
-    /* font-family: 'Shadows Into Light', cursive; */
     color: black;
 }
 
 p {
     font-size: 21px;
-    /* font-family: 'Shadows Into Light', cursive; */
     color: black;
+    
 }
 
 li {
     font-size: 21px;
-    /* font-family: 'Shadows Into Light', cursive; */
     color: black;
+    
 }
 
 a:link {
@@ -63,7 +60,7 @@ a:visited {
     color: rgb(248, 2, 125);
 }
 
-ul  {
+ul {
     list-style-type: disc;
 
 }
@@ -73,9 +70,7 @@ ol {
 
 }
 
-#title1 {
-
-}
+#title1 {}
 
 #section1 {
     display: flex;

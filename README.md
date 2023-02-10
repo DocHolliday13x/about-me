@@ -12,11 +12,9 @@
 
 ![Accessibility Score](img/lighthouseScreenshotLab03.png)
 
-
 ### Links and Resources
 
 * [WS3 CSS](https://www.w3schools.com/css/default.asp)
-
 
 #### Reflections
 
